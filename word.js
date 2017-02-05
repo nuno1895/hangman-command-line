@@ -11,11 +11,11 @@ var auditWord = function(word, inputChoice) {
     this.inputChoice = inputChoice;
     this.createBlanks = function() {
         for (var i = 0; i < this.word.length; i++) {
-            var newLet = new scrambleWord(this.word[i]);
+            var newLetters = new scrambleWord(this.word[i]);
             if (this.word[i].valueOf() !== " ") {
-                this.letters.push(newLet.blank());
+                this.letters.push(newLetters.blank());
             } else {
-                this.letters.push(newLet.space());
+                this.letters.push(newLetters.space());
             }
         }
     };
