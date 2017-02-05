@@ -3,6 +3,7 @@ var randomizeWord = require('./randomPick.js');
 var inquirer = require('inquirer');
 var colors = require('colors')
 
+
 var startGame = function() {
     gameover = false;
     found = false;
